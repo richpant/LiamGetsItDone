@@ -17,13 +17,19 @@ import edu.wpi.first.wpilibj.drive.DifferentialDrive;
  * the package after creating this project, you must also update the manifest file in the resource
  * directory.
  */
+
+
 public class Robot extends TimedRobot {
- //motor declaration
-  PWMSparkMax leftBack = new PWMSparkMax(1);
+ 
+  //motor declaration
+
+
+ PWMSparkMax leftBack = new PWMSparkMax(1);
  PWMSparkMax leftFront = new PWMSparkMax(2);
  PWMSparkMax rightBack = new PWMSparkMax(3);
  PWMSparkMax rightFront = new PWMSparkMax(4);
-// speed group declaration
+
+ // speed group declaration
  SpeedControllerGroup leftMotors =  new SpeedControllerGroup(leftBack, leftFront);
  SpeedControllerGroup RightMotors = new SpeedControllerGroup(rightBack, rightFront);// drive declaration
  DifferentialDrive drive = new DifferentialDrive(leftMotors, RightMotors);
